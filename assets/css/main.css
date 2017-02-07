@@ -1,171 +1,275 @@
-/*////////////// MAIN //////////////*/
+/*////////////////////////////// MAIN ////////////////////////*/
 
 html, body {
 	width: 100%;
 	height: 100%;
-	color: #fff;
-	background-color: rgba(0,0,0,.4);
 }
 
-h1 {
-	width: 100%;
-	background: rgba(0,0,0,.5);
-	font-family: Georgia, serif;
-	font-style: italic;
-	font-weight: 300;
-	font-size: 1.1em;
-	padding: 3.5%;
-	box-sizing: border-box;
-	position: absolute;
-	bottom: 0;
+body {
+	font-family: helvetica, arial, sans-serif;
+		/*/ helvetica is a mac default font, arial is a pc default font /*/
+	color: #4c4a4a;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 
-.a {background: url(../../design/exports/photo-7.jpg) no-repeat center;}
-.b {background: url(../../design/exports/photo-2.jpg) no-repeat center;}
-.c {background: url(../../design/exports/photo-3.jpg) no-repeat center;}
-.d {background: url(../../design/exports/photo-4.jpg) no-repeat center;}
-.e {background: url(../../design/exports/photo-17.jpg) no-repeat center;}
-.f {background: url(../../design/exports/photo-6.jpg) no-repeat center;}
-.g {background: url(../../design/exports/photo-1.jpg) no-repeat center;}
-.h {background: url(../../design/exports/photo-14.jpg) no-repeat center;}
-.i {background: url(../../design/exports/photo-9.jpg) no-repeat center;}
-.j {background: url(../../design/exports/photo-8.jpg) no-repeat center;}
-.k {background: url(../../design/exports/photo-11.jpg) no-repeat center;}
-.l {background: url(../../design/exports/photo-12.jpg) no-repeat center;}
-.m {background: url(../../design/exports/photo-16.jpg) no-repeat center;}
+a {
+	text-decoration: none;
+}
 
-
-
-
-/*////////////// MOBILE //////////////*/
-
-.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m {
+h1 a{
 	float: left;
-	width: 50%;
-	height: 195px;
-	position: relative;
-	box-shadow: 0px, 0px, 20px, 0px rgba (0,0,0,.5);
-	box-sizing: border-box;
-	background-size: cover;
-	transition: all .2s ease-in;
-	-webkit-transition: all .1s ease-in;
+	width: 112px;
+	height: 33px;
+	background: url(../img/logo-touch.png) no-repeat;
+	text-indent: -99999px;
+	overflow: hidden;
+	/*/ color: transparent -- makes text color invisible /*/
 }
 
-.a {
-	height: 125px;
+.pagewrap {
+	width: 87.5%; /*280/320*/
+	margin: 0 6.25%; /*20/320*/   /*Don't use margin-left or margin-right unless you have to*/
+	float: left; /*If element within a wrapper is floating, float the whole wrapper*/
+}
+
+header {
 	width: 100%;
+	margin: 20px 0 70px;
+	float: left;
+}
+
+header ul {
+	width: 100%;
+	float: left;
+	display: inline;
+	margin: 20px 0 0 0;
+}
+
+header ul li {
+	float: left;
+	/*inline (only take up the width of the item)
+	block - takes up the entire row (using height of the item)
+	inline block - the same as inline and block together (but adds one pixel to width)*/
+}
+
+header ul li a {
+	float: left;
+	padding: 0 10px;
+}
+
+header ul li:first-child a{
+	padding: 0 10px 0 0;
+}
+
+header ul li a:hover {
+	color: #1fe8ff;
+}
+
+header ul li a.active {
+	color: #1fe8ff;
+	font-weight: bold;
+}
+
+
+/*//////////////////////////////// PROJECT STUFF //////////////////////////////*/
+
+a.project{
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	-webkit-filter: grayscale(1);
+	background-repeat: no-repeat;
+}
+
+a.project:hover{
+	-webkit-filter: grayscale(0);
+}
+a.project h2{
+	float: left;
+	width: 100%;
+	border-top: 1px solid #222;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 10px 0;
+}
+
+a.project figure {
+	float: left;
+	width: 100%;
+	height: 165px;
+	border-top: 1px solid #1fe8ff;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+	.looklook figure {background-image: url(../img/project-look-look.jpg);}
+    .edinburgh figure {background-image: url(../img/project-edinburgh.jpg);}
+    .ballie figure {background-image: url(../img/project-baillie-gifford.jpg);}
+    .blythswood figure {background-image: url(../img/project-blythswood-square.jpg);}
+    .buzzworks figure {background-image: url(../img/project-buzzworks.jpg);}
+    .citi figure {background-image: url(../img/project-citi-living.jpg);}
+    .cooking figure {background-image: url(../img/project-cooking-for-one.jpg);}
+    .fever figure {background-image: url(../img/project-fever-pr.jpg);}
+    .llnpa figure {background-image: url(../img/project-llnpa.jpg);}
+    .penfolds figure {background-image: url(../img/project-penfolds.jpg);}
+    .pizzaluxe figure {background-image: url(../img/project-pizzaluxe.jpg);}
+    .ricks figure {background-image: url(../img/project-ricks.jpg);}
+    .scottish figure {background-image: url(../img/project-scottish-ballet.jpg);}
+    .sheraton figure {background-image: url(../img/project-sheraton.jpg);}
+    .shilling figure {background-image: url(../img/project-shilling.jpg);}
+    .wwf figure {background-image: url(../img/project-wwf.jpg);}
+
+
+/*//////////////////////////// MEDIA QUERY ////////////////////////////////////*/
+
+@media screen and (min-width: 480px){
+
+	.pagewrap {
+		width: 91.66666666667%; /*440/480*/
+		margin: 4.16666666667%;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.pagewrap {
+		width: 90.8203125%;
+		margin: 4.58984375%;
+	}
+
+	.col-three-fifth{
+		float: left;
+		width: 59.1397849462336%; /*550/930*/
+		margin-right: 2.150537634409%; /*20/930*/ /*only pick one margin so you don't get double widths*/
+	}
+	.col-one-fifth{
+		float: left;
+		width: 30.909090909091%;
+		margin-right: 3.6363636363636%; /*20/550*/
 	}
 
 
+	a.shilling figure,
+	a.looklook figure{
+		height: 134px;
+	}
 
+	a.edinburgh {
+		width: 65.454545454545%;
+	}
+	a.edinburgh figure {
+		height: 325px;
+	}
 
-
-/*////////////// TABLET //////////////*/
-
-
-@media screen and (min-width: 768px) {
-	.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m {
-		width: 33.333%;
+	
+	
+	a.blythswood {
+		width: 65.454545454545%;
+		margin-right: 3.6363636363636%;
+		float: left;
+	}
+	a.blythswood figure {
 		height: 320px;
 	}
-}
 
-/*////////////// DESKTOP //////////////*/
+	a.ballie{
+		width: 30.909090909091%;
+	}
+	a.ballie figure{
+		height: 320px;
+	}
 
+	a.fever{
+		width: 38.709677419355%;
+	}
+	a.fever figure{
+		height: 134px;
+	}
 
-@media screen and (min-width: 1440px) {
-	.af-wrap {
-		width: 100%;
-		height: 33.33%;
+	a.pizzaluxe{
+		width: 38.709677419355%;
+	}
+	a.pizzaluxe figure{
+		height: 510px;
+	}
+
+	.section-two{
 		float: left;
-	}
-
-	.ab-wrap {
-		width: 25%;
-		height: 100%;
-		float: left;
-	}
-	.a {
-		height: 25%;
 		width: 100%;
 	}
 
-	.b {
-		height: 75%;
-		width: 100%;
-	} 
-
-	.c {
-		width: 35%;
-		height: 100%;
+	a.sheraton{
+		width: 38.235294117647%;
+		margin-right: 2.941176470588%;
+	}
+	a.sheraton figure{
+		height: 298px;
 	}
 
-	.de-wrap {
-		width: 20%;
-		height: 100%;
-		float: left;
+	a.buzzworks{
+		width: 17.647058823529%;
+		margin-right: 2.941176470588%;
+	}
+	a.buzzworks figure,
+	a.scottish figure,
+	a.penfolds figure,
+	a.citi figure,
+	a.wwf figure,
+	a.ricks figure,
+	a.llnpa figure{
+		height: 120px;
 	}
 
-	.d {
-		width: 100%;
-		height: 50%;
-	}
-	.e {
-		width: 100%;
-		height: 50%;
+	a.scottish{
+		width: 38.235294117647%;
 	}
 
-	.f {
-		width: 20%;
-		height: 100%;
+	a.penfolds{
+		width: 38.235294117647%;
+		margin-right: 2.941176470588%;
 	}
 
-	.ghi-wrap {
-		width: 40%;
-		height: 66.67%;
-		float: left;
+	a.citi {
+		width: 17.647058823529%;
 	}
 
-	.g {
-		height: 50%;
-		width: 100%;
+	a.cooking{
+		width: 58.823529411765%;
+		margin-right: 2.941176470588%;
+	}
+	a.cooking figure{
+		height: 300px;
 	}
 
-	.h {
-		height: 50%;
-		width: 60%;
+	a.wwf{
+		width: 27.956989247312%;
+	}
+	
+	
+	a.ricks{
+		width: 17.647058823529%;
+		margin-right: 2.941176470588%;
 	}
 
-	.i {
-		height: 50%;
-		width: 40%;
-	}
-
-	.j {
-		width: 25%;
-		height: 66.7%;
-		float: left;
-	}
-
-	.klm-wrap {
-		width: 35%;
-		height: 66.67%;
-		float: left;
-	}
-
-	.k {
-		height: 50%;
-		width: 50%;
-	}
-
-	.l {
-		height: 50%;
-		width: 50%;
-	}
-
-	.m {
-		height: 50%;
-		width: 100%;
+	a.llnpa{
+		width: 17.647058823529%;
 	}
 }
 
+
+@media screen and (min-width: 1440px){
+	.section-one{
+		float: left;
+		display: inline;
+		margin-right: 1.388888888889%;
+		height: 655px;
+	}
+
+	.section-two{
+		display: inline;
+		width: 47.222222222222%;
+		height: 655px;
+	}
+}
