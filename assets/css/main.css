@@ -15,16 +15,22 @@ body {
 
 a {
 	text-decoration: none;
+	color: black;
 }
 
 h1 a{
 	float: left;
 	width: 112px;
 	height: 33px;
+	color: black;
 	background: url(../img/logo-touch.png) no-repeat;
 	text-indent: -99999px;
 	overflow: hidden;
 	/*/ color: transparent -- makes text color invisible /*/
+}
+
+h2 {
+	border-bottom: 1px solid #1fe8ff;
 }
 
 .pagewrap {
@@ -78,14 +84,13 @@ a.project{
 	float: left;
 	width: 100%;
 	margin-bottom: 20px;
-	-webkit-filter: grayscale(1);
 	background-repeat: no-repeat;
 }
 
-a.project:hover{
+a.project figure:hover{
 	-webkit-filter: grayscale(0);
 }
-a.project h2{
+a.project h2 {
 	float: left;
 	width: 100%;
 	border-top: 1px solid #222;
@@ -93,16 +98,17 @@ a.project h2{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	padding: 10px 0;
+
 }
 
 a.project figure {
 	float: left;
 	width: 100%;
 	height: 165px;
-	border-top: 1px solid #1fe8ff;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-filter: grayscale(1);
 }
 
 	.looklook figure {background-image: url(../img/project-look-look.jpg);}
@@ -139,6 +145,10 @@ a.project figure {
 		margin: 4.58984375%;
 	}
 
+	.nav {
+		float: right;
+		width: auto;
+	}
 	.col-three-fifth{
 		float: left;
 		width: 59.1397849462336%; /*550/930*/
