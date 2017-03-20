@@ -1,285 +1,307 @@
-/*////////////////////////////// MAIN ////////////////////////*/
-
-html, body {
-	width: 100%;
-	height: 100%;
+*{
+	box-sizing: border-box;
 }
 
 body {
-	font-family: helvetica, arial, sans-serif;
-		/*/ helvetica is a mac default font, arial is a pc default font /*/
-	color: #4c4a4a;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
+	background: #dbcfbe;
 }
 
-a {
-	text-decoration: none;
-	color: black;
+p {
+	font-family: 'PT Serif', serif;
+}
+ li {
+ 	font-family: 'PT Serif', serif;
+ }
+
+.wrapper {
+	vertical-align: center;
+	width: 90%;
+	margin: 0 auto;
+
+}
+/*/////////////////HEADER/////////////////////*/
+
+.logo {
+	text-align: center;
+	margin-top: 0px
+}
+.main-logo {
+	margin-top: 0px;
+	height: 100px;
+	width: 300px;
+	vertical-align: center;
 }
 
-h1 a{
-	float: left;
-	width: 112px;
-	height: 33px;
-	color: black;
-	background: url(../img/logo-touch.png) no-repeat;
-	text-indent: -99999px;
-	overflow: hidden;
-	/*/ color: transparent -- makes text color invisible /*/
+.logo-big{
+	display: none;
 }
 
-h2 {
-	border-bottom: 1px solid #1fe8ff;
-}
-
-.pagewrap {
-	width: 87.5%; /*280/320*/
-	margin: 0 6.25%; /*20/320*/   /*Don't use margin-left or margin-right unless you have to*/
-	float: left; /*If element within a wrapper is floating, float the whole wrapper*/
-}
-
-header {
-	width: 100%;
-	margin: 20px 0 70px;
-	float: left;
-}
-
-header ul {
-	width: 100%;
-	float: left;
-	display: inline;
-	margin: 20px 0 0 0;
-}
-
-header ul li {
-	float: left;
-	/*inline (only take up the width of the item)
-	block - takes up the entire row (using height of the item)
-	inline block - the same as inline and block together (but adds one pixel to width)*/
-}
-
-header ul li a {
-	float: left;
-	padding: 0 10px;
-}
-
-header ul li:first-child a{
-	padding: 0 10px 0 0;
-}
-
-header ul li a:hover {
-	color: #1fe8ff;
-}
-
-header ul li a.active {
-	color: #1fe8ff;
+.logo p {
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Hammersmith One', sans-serif;
 	font-weight: bold;
 }
 
+.logo-big p {
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Hammersmith One', sans-serif;
+	font-weight: bold;
+}
+.navigation li{
+	display: inline-block;
+	color: #f0470f;
+	font-weight: bold;
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 16px;
+	text-decoration: underline;
+	text-align: center;
+}
 
-/*//////////////////////////////// PROJECT STUFF //////////////////////////////*/
+.navigation {
+	vertical-align: center;
+	text-align: center;
+	padding: 20px 0px;
+}
 
-a.project{
-	float: left;
+.nav-item {
+	font-family: 'Hammersmith One', sans-serif;
+	margin: 0px 10px;
+}
+
+
+/*///////////////////////////////////BUILDERS///////////////////*/
+
+h1 {
+	font-size: 60px;
+	font-family: 'Hammersmith One', sans-serif;
+	color: 443526;
+	text-align: center;
+}
+
+.info{
+	padding-top: 20px;
+}
+
+
+/*//////////////////////////FORM//////////////////*/
+
+ ul {
+ 	text-decoration: none;
+ 	list-style-type: none;
+ 	list-style: none
+ }
+
+ form {
+ 	text-decoration: none;
+ 	list-style-type: none;
+ 	padding: 40px 0px 40px 0px;
+ }
+
+.builders section{
+	background-color: #e2d9cb;
+	padding: 20px;
+	margin: 10px;
+}
+
+.name {
+	background: none;
 	width: 100%;
-	margin-bottom: 20px;
-	background-repeat: no-repeat;
 }
 
-a.project figure:hover{
-	-webkit-filter: grayscale(0);
+.name label {
+	font-family: 'Hammersmith One', sans-serif;
+	/*display: inline-block;*/
+	font-weight: bold;
 }
-a.project h2 {
-	float: left;
+
+/*.name input{
+	display: inline-block;
+}
+*/
+
+.name-text{
+	padding: 10px 0px;
+}
+
+
+.button {
+	height: 40px;
 	width: 100%;
-	border-top: 1px solid #222;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	padding: 10px 0;
+	background-color: #f0470f;
+	color: white;
+	font-weight: bold;
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 16px;
+	list-style-type: none;
+	text-decoration: none;
+	border-color: #b83d14;
+}
+
+.section li{
+	color: #443526;
+}
+
+.other {
+	margin-left: auto;
+}
+
+
+/*////////////////////////////////INSPIRATION//////////////////*/
+
+h3{
+	color: #443526;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Hammersmith One', sans-serif;
+	font-weight: bold;
+	padding: 30px 0px;
+}
+
+
+article {
+	background-color: #624c37;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	height: auto;
+	width: auto;
+}
+
+h4 {
+	color: white;
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 15px;
+	margin: 0px;
+	padding-top: 20px;
+}
+
+.inspiration li {
+	color: white;
+	font-size: 15px;
+	text-align: center;
+}
+
+.inspiration ul{
+	padding: 20px 30px 20px 30px;
+}
+
+
+
+/*////////////////////////PAGE NUMBERS///////////////////////*/
+
+.numbers {
+	display: inline-block;
 
 }
 
-a.project figure {
-	float: left;
+.numbers li{
+	display: inline-block;
+}
+
+.numbers a{
+	display: inline-block;
+	padding: 10px;
+	margin: 0px 0px 10px 0px;
+	background-color: #e2d9cb;
+	color: #f0470f;
+	text-decoration: underline;
+}
+
+.pagination ul{
 	width: 100%;
-	height: 165px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-filter: grayscale(1);
+	text-align: center;
 }
 
-	.looklook figure {background-image: url(../img/project-look-look.jpg);}
-    .edinburgh figure {background-image: url(../img/project-edinburgh.jpg);}
-    .ballie figure {background-image: url(../img/project-baillie-gifford.jpg);}
-    .blythswood figure {background-image: url(../img/project-blythswood-square.jpg);}
-    .buzzworks figure {background-image: url(../img/project-buzzworks.jpg);}
-    .citi figure {background-image: url(../img/project-citi-living.jpg);}
-    .cooking figure {background-image: url(../img/project-cooking-for-one.jpg);}
-    .fever figure {background-image: url(../img/project-fever-pr.jpg);}
-    .llnpa figure {background-image: url(../img/project-llnpa.jpg);}
-    .penfolds figure {background-image: url(../img/project-penfolds.jpg);}
-    .pizzaluxe figure {background-image: url(../img/project-pizzaluxe.jpg);}
-    .ricks figure {background-image: url(../img/project-ricks.jpg);}
-    .scottish figure {background-image: url(../img/project-scottish-ballet.jpg);}
-    .sheraton figure {background-image: url(../img/project-sheraton.jpg);}
-    .shilling figure {background-image: url(../img/project-shilling.jpg);}
-    .wwf figure {background-image: url(../img/project-wwf.jpg);}
+.pagination li:first-child{
+	text-align: left;
+	width: 50%;
+}
 
+.pagination li:last-child{
+	text-align: right;
+	width: 50%;
+}
 
-/*//////////////////////////// MEDIA QUERY ////////////////////////////////////*/
+/*//////////////////////////MEDIA QUERIES/////////////////*/
 
 @media screen and (min-width: 480px){
-
-	.pagewrap {
-		width: 91.66666666667%; /*440/480*/
-		margin: 4.16666666667%;
+	.name label{
+		display: inline-block;
 	}
-}
-
-@media screen and (min-width: 1024px){
-	.pagewrap {
-		width: 90.8203125%;
-		margin: 4.58984375%;
+	.name button{
+		display: inline-block;
 	}
-
-	.nav {
-		float: right;
-		width: auto;
-	}
-	.col-three-fifth{
-		float: left;
-		width: 59.1397849462336%; /*550/930*/
-		margin-right: 2.150537634409%; /*20/930*/ /*only pick one margin so you don't get double widths*/
-	}
-	.col-one-fifth{
-		float: left;
-		width: 30.909090909091%;
-		margin-right: 3.6363636363636%; /*20/550*/
-	}
-
-
-	a.shilling figure,
-	a.looklook figure{
-		height: 134px;
-	}
-
-	a.edinburgh {
-		width: 65.454545454545%;
-	}
-	a.edinburgh figure {
-		height: 325px;
-	}
-
-	
-	
-	a.blythswood {
-		width: 65.454545454545%;
-		margin-right: 3.6363636363636%;
-		float: left;
-	}
-	a.blythswood figure {
-		height: 320px;
-	}
-
-	a.ballie{
-		width: 30.909090909091%;
-	}
-	a.ballie figure{
-		height: 320px;
-	}
-
-	a.fever{
-		width: 38.709677419355%;
-	}
-	a.fever figure{
-		height: 134px;
-	}
-
-	a.pizzaluxe{
-		width: 38.709677419355%;
-	}
-	a.pizzaluxe figure{
-		height: 510px;
-	}
-
-	.section-two{
-		float: left;
+	.name {
+		display: inline-block;
 		width: 100%;
+		
 	}
 
-	a.sheraton{
-		width: 38.235294117647%;
-		margin-right: 2.941176470588%;
-	}
-	a.sheraton figure{
-		height: 298px;
+	.name-text {
+		display: inline-block;
+		padding-right: 10px;
 	}
 
-	a.buzzworks{
-		width: 17.647058823529%;
-		margin-right: 2.941176470588%;
-	}
-	a.buzzworks figure,
-	a.scottish figure,
-	a.penfolds figure,
-	a.citi figure,
-	a.wwf figure,
-	a.ricks figure,
-	a.llnpa figure{
-		height: 120px;
+	.button {
+		display: inline-block;
+		width: 20%;
 	}
 
-	a.scottish{
-		width: 38.235294117647%;
+@media screen and (min-width: 760px){
+
+}
+
+@media screen and (min-width: 1020px){
+	.three {
+		margin-left: auto;
 	}
 
-	a.penfolds{
-		width: 38.235294117647%;
-		margin-right: 2.941176470588%;
+	.logo-big{
+		display: inline-block;
 	}
 
-	a.citi {
-		width: 17.647058823529%;
+	.nav li {
+		display: inline-block;
 	}
 
-	a.cooking{
-		width: 58.823529411765%;
-		margin-right: 2.941176470588%;
+	.nav-item {
+		margin: 0px 80px;
 	}
-	a.cooking figure{
-		height: 300px;
-	}
-
-	a.wwf{
-		width: 27.956989247312%;
-	}
-	
-	
-	a.ricks{
-		width: 17.647058823529%;
-		margin-right: 2.941176470588%;
+	.navigation {
+		padding: 0px 0px 20px;
 	}
 
-	a.llnpa{
-		width: 17.647058823529%;
+	.logo {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1241px){
+		.logo {
+		display: none;
+	}
+
+	.other {
+		width: 80%;
+	}
+
+	.input-name{
+		width: 80%;
+		height: 40px;
+	}
+
+	.name-text{
+		width: 79%;
+	}
+
+	.button{
+		margin-top: 10px;
 	}
 }
 
 
-@media screen and (min-width: 1440px){
-	.section-one{
-		float: left;
-		display: inline;
-		margin-right: 1.388888888889%;
-		height: 655px;
-	}
 
-	.section-two{
-		display: inline;
-		width: 47.222222222222%;
-		height: 655px;
-	}
-}

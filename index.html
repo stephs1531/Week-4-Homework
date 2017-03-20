@@ -2,133 +2,253 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Week 5 Homework</title>
+        <title>Week 7 Homework</title>
         <meta name="description" content="week 5 Homework">
         <meta name="author" content="Stephanie Sapp">
       
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/flexbox.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
         
         
     </head>
 
     <body>
-        <div class="pagewrap">
+        <div class="wrapper">
             <header>
-                <h1>
-                    <a href="#">Touch Agency</a>
-                </h1>
-                <ul class="nav">
-                    <li><a href="" class="active">Work</a>/</li>
-                    <li><a href="">About</a>/</li>
-                    <li><a href="">News</a>/</li>
-                    <li><a href="">Contact</a></li>
-                </ul>
+                <div class="logo">
+                    <img class="main-logo" src="assets/img/logo.png">
+                    <p class="tagline">Celebrate National S'mores Day Every Day</p>
+                </div>
+                
+                <div class="navigation">
+                    <ul class="nav">
+                        <li class="nav-item"><a>HOME</a></li>
+                        <li class="nav-item"><a>S'MORES BUILDER</a></li>
+                        <div class="logo-big">
+                            <img class="main-logo" src="assets/img/logo.png">
+                            <p class="tagline">Celebrate National S'mores Day Every Day</p>
+                        </div>
+                        <li class="nav-item three"><a>THROW A PARTY</a></li>
+                        <li class="nav-item"><a>TUMBLR</a></li>
+                    </ul>
+                </div>
             </header>
-            <section class="section-one">
 
-                <div class="col-three-fifth">
+            <h1>S'MORES BUILDER</h1>
+            <p class="info">This is your chance to get creative. As long as you have a roasted marshmallow sandwiched between something with some chocolate added, I say you got a s'mores. So pick your frame, marshmallow, candy, add an optional accessory or two, and build a crazy s'mores concoction.</p>
 
-                    <div class="col-one-fifth">
+            <section>
+                <form class="builders">
+                    <section>
+                        <h3>FRAME</h3>
+                        <ul>
+                            <li><input type="radio" name="frame" value="graham crackers"><label>    graham crackers</label></li>
+                            <li><input type="radio" name="frame" value="cinnamon grahams"><label>cinnamon grahams</label></li>
+                            <li><input type="radio" name="frame" value="chocolate grahams"><label>chocolate grahams</label></li>
+                            <li><input type="radio" name="frame" value="fudge stripe cookies"><label>Fudge Stripe Cookies</label></li>
+                            <li><input type="radio" name="frame" value="oreos"><label>Oreos</label></li>
+                            <li><input type="radio" name="frame" value="chocolate chip cookies"><label>chocolate chip cookies</label></li>
+                            <li><input type="radio" name="frame" value="ritz crackers"><label>Ritz crackers</label></li>
+                            <li><label>other:</label><input type="text" name="other" value="graham crackers" class="other"></li>
+                        </ul>
+                    </section>
+            
 
-                        <a href="" class="project shilling">
-                            <h2>The Shilling Group</h2>
-                            <figure></figure>
-                        </a>
+                    <section>
+                        <h3>MARSHMALLOW</h3>
+                        <ul>
+                            <li><input type="radio" name="frame" value="graham crackers"><label>plain marshmallow</label></li>
+                            <li><input type="radio" name="frame" value="cinnamon grahams"><label>chocolate 'mallow</label></li>
+                            <li><input type="radio" name="frame" value="chocolate grahams"><label>starwberry 'mallow</label></li>
+                            <li><input type="radio" name="frame" value="fudge stripe cookies"><label>giant 'mallow</label></li>
+                            <li><label>other:</label><input type="text" name="other" value="graham crackers" class="other"></li>
+                        </ul>
+                    </section>
 
-                        <a href="" class="project looklook">
-                            <h2>LookLook</h2>
-                            <figure></figure>
-                        </a>
+                    <section>
+                        <h3>CANDY</h3>
+                        <ul>
+                            <li><input type="radio" name="frame" value="graham crackers"><label>Hershey's chocolate</label></li>
+                            <li><input type="radio" name="frame" value="cinnamon grahams"><label>dark chocolate</label></li>
+                            <li><input type="radio" name="frame" value="chocolate grahams"><label>chocolate with almonds</label></li>
+                            <li><input type="radio" name="frame" value="fudge stripe cookies"><label>Nutella</label></li>
+                            <li><input type="radio" name="frame" value="oreos"><label>Reese's P.B. Cup</label></li>
+                            <li><input type="radio" name="frame" value="chocolate chip cookies"><label>white chocolate</label></li>
+                            <li><albel>other:</label><input type="text" name="other" value="graham crackers" class="other"></li>
+                        </ul>
+                    </section>
 
-                    </div> <!--END col-one-fifth-->
+                    <section class="accessories">
+                        <h3>ACCESSORIES</h3>
+                        <ul>
+                            <li><input type="checkbox" name="frame" value="graham crackers"><label>peanut butter</label></li>
+                            <li><input type="checkbox" name="frame" value="cinnamon grahams"><label>banana</label></li>
+                            <li><input type="checkbox" name="frame" value="chocolate grahams"><label>strawberries</label></li>
+                            <li><input type="checkbox" name="frame" value="fudge stripe cookies"><label>caramel sauce</label></li>
+                            <li><input type="checkbox" name="frame" value="oreos"><label>cream cheese</label></li>
+                            <li><input type="checkbox" name="frame" value="chocolate chip cookies"><label>bacon</label></li>
+                            <li><label>other:</label><input type="text" name="other" value="graham crackers" class="other"></li>
+                        </ul>
+                    </section>
+                </form>
 
-                    <a href="" class="project edinburgh">
-                        <h2>Edinburgh International Festival</h2>
-                        <figure></figure>
-                    </a>
 
-                     <a href="" class="project blythswood">
-                        <h2>Blythswood Square</h2>
-                        <figure></figure>
-                    </a>
-
-                     <a href="" class="project ballie">
-                        <h2>Baillie Gifford</h2>
-                        <figure></figure>
-                    </a>
-
-                </div> <!-- END col three fifth-->
-
-                <div class="col-two-fifth">
-
-                     <a href="" class="project fever">
-                        <h2>Fever PR</h2>
-                        <figure></figure>
-                    </a>
-
-                     <a href="" class="project pizzaluxe">
-                        <h2>Pizza Luxe</h2>
-                        <figure></figure>
-                    </a>
-
-                </div> <!-- END col-two-fifth-->
-
-            </section> <!--End section one-->
-            <section class="section-two">
-               
-
-                <a href="" class="project sheraton">
-                     <h2>Sheraton</h2>
-                    <figure></figure>
-                </a>
-                <a href="" class="project buzzworks">
-                    <h2>Buzzworks</h2>
-                    <figure></figure>
-                </a>
-
-                <a href="" class="project scottish">
-                    <h2>Scottish Ballet</h2>
-                    <figure></figure>
-                </a>
-
-                <a href="" class="project penfolds">
-                    <h2>Penfolds</h2>
-                    <figure></figure>
-                </a>
-
-                <a href="" class="project citi">
-                    <h2>Citi Living</h2>
-                    <figure></figure>
-                </a>
-
-                <a href="" class="project cooking">
-                    <h2>Cooking For One</h2>
-                    <figure></figure>
-                </a>
-
-                <a href="" class="project wwf">
-                    <h2>WWF</h2>
-                    <figure></figure>
-                </a>
-
-                <a href="" class="project ricks">
-                    <h2>Ricks</h2>
-                    <figure></figure>
-                </a>
-
-                <a href="" class="project llnpa">
-                    <h2>LLNPA</h2>
-                    <figure></figure>
-                </a>
-
+                    <section class="name">
+                        <div class="name-text">
+                            <label>NAME YOUR S'MORES:</label>
+                                <input type="text" name="name" value="name your s'mores" class="input-name"></input>
+                        </div>
+                        <button class="button" type="submit">BUILD IT</button>
+                    </section>
             </section>
-        </div> <!--END page wrap-->
 
+                <h3>NEED SOME INSPIRATION?</h3>
+               
+                <section class="inspiration">
+                
+                    <article class="classic box">
+                        <h4>CLASSIC</h4>
+                        <ul class="recipes">
+                            <li>plain graham crackers</li>
+                            <li>plain marshmallow</li>
+                            <li>Hershey's chocolate</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="elvis box">
+                        <h4>ELVIS</h4>
+                        
+                        <ul ckass="recipes">
+                            <li>chocolate graham crackers</li>
+                            <li>plain marshmallow</li>
+                            <li>Hershey's chocolate</li>
+                            <li>peanut butter</li>
+                            <li>banana</li>
+                        </ul>
+                    </article>
 
+                    <article class="pbj box">
+                        <h4>PB&J</h4>
+                        <ul class="recipes">
+                            <li>plain graham crackers</li>
+                            <li>plain marshmallow</li>
+                            <li>Hershey's chocolate</li>
+                            <li>peanut butter</li>
+                            <li>strawberries</li>
+                        </ul>
+                    </article>
 
+                    <article class="chocolatecovered box">
+                        <h4>CHOCOLATE COVERED STRAWBERRIES</h4>
+                        <ul class="recipes">
+                            <li>chocolate graham crackers</li>
+                            <li>plain marshmallow</li>
+                            <li>dark chocolate</li>
+                            <li>strawberries</li>
+                        </ul>
+                    </article>
 
+                    <article class="thanksgiving box">
+                        <h4>THANKSGIVING CASSEROLE</h4>
+                        <ul class="recipes">
+                            <li>cinnamon graham crackers</li>
+                            <li>plain marshmallow</li>
+                            <li>Hershey's chocolate</li>
+                            <li>sweet potato puree</li>
+                        </ul>
+                    </article>
+
+                    <article class="NUTTY box">
+                        <h4>NUTTY</h4>
+                        <ul class="recipes">
+                            <li>almond thins cookies</li>
+                            <li>plain marshmallow</li>
+                            <li>Nutella</li>
+                        </ul>
+                    </article>
+
+                    <article class="banana box">
+                        <h4>BANANA PUDDING</h4>
+                        <ul class="recipes">
+                            <li>Nilla Wafers</li>
+                            <li>plain marshmallow</li>
+                            <li>white chocolate</li>
+                            <li>banana</li>
+                        </ul>
+                    </article>
+
+                    <article class="monster box">
+                        <h4>THE MONSTER</h4>
+                        <ul class="recipes">
+                            <li>chocolate graham crackers</li>
+                            <li>chocolate marshmallow</li>
+                            <li>Reese's peanut butter cup</li>
+                            <li>caramel sauce</li>
+                        </ul>
+                    </article>
+
+                    <article class="salty-sweeet box">
+                        <h4>SALTY-SWEET</h4>
+                        <ul class="recipes">
+                            <li>Ritz crackers</li>
+                            <li>plain marshmallow</li>
+                            <li>Hershey's chocolate</li>
+                            <li>peanut butter</li>
+                        </ul>
+                    </article>
+
+                    <article class="triple box">
+                        <h4>TRIPLE CHOCOLATE</h4>
+                        <ul class="recipes">
+                            <li>chocolate graham crackers</li>
+                            <li>chocoalte marshmallow</li>
+                            <li>dark chocolate</li>
+                        </ul>
+                    </article>
+
+                    <article class-"fruit-salad box">
+                        <h4>FRUIT SALAD</h4>
+                        <ul class="recipes">
+                            <li>plain graham crackers</li>
+                            <li>plain marshmallow</li>
+                            <li>white chocolate</li>
+                            <li>banana</li>
+                            <li>strawberries</li>
+                        </ul>
+                    </article>
+
+                    <article class="cookies box">
+                        <h4>COOKIES 'N' CREAM</h4>
+                        <ul class="recipes">
+                            <li>Oreos</li>
+                            <li>plain marshmallows</li>
+                            <li>Hershey's Cookies 'n' Creme bar</li>
+                        </ul>
+                    </article>
+                </section>
+       
+                <section class="pagination">
+                    <ul class="numbers">
+                        <li class="prev"><a>Previous</a></li>
+                        <li><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                        <li><a>4</a></li>
+                        <li><a>5</a></li>
+                        <li><a>6</a></li>
+                        <li><a>7</a></li>
+                        <li><a>8</a></li>
+                        <li class="next"><a>Next</a></li>
+                    </ul>
+                </section>
+
+        </div>
 
     </body>
-    </html>
+
+<html>
+
